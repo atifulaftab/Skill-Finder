@@ -12,7 +12,7 @@ def readPdfandMineSkill():
     no_of_pdf = 0
     foldername = input("Enter Folder Name: \t")
     my_keyword=[]
-    noofskill=int(input("Enter no. of skills:\t"))
+    noofskill=int(input("Enter no. of skills you want to check:\t"))
     for x in range(noofskill):
         my_keyword.append(input("Enter Skill:\t"))
     directory = os.path.join(".//"+foldername)
