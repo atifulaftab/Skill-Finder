@@ -7,8 +7,6 @@ Created on Tue Aug 11 18:22:54 2020
 
 import PyPDF2
 import textract
-import nltk
-from PyPDF2 import pdf
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 

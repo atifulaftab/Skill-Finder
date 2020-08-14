@@ -34,6 +34,6 @@ def readPdfandMineSkill():
     for selection in selected:
             print(selection) 
     print("\n#######Generating Report#######\n")  
-    report_genarate(selected)  
+    report_genarate(selected,threshold)  
     print("Generation Completed!!!!")         
     return no_of_pdf
