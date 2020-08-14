@@ -32,3 +32,5 @@ def extractSkill(keywords,filename,my_keyword):
                     flag =0
     print("Pdf {} has {} % skill point".format(filename,(competency/len(my_keyword))*100))
     print("\n")
+    
+    return competency/len(my_keyword)*100
