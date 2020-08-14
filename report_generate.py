@@ -6,7 +6,7 @@ Created on Thu Aug 13 20:30:08 2020
 """
 
 def report_genarate(selected):
-    f = open("SelectedCV.txt", "r+")
+    f = open("SelectedCV.txt", "w")
     for selection in selected:
         f.write(selection)
         f.write("\n")
