@@ -10,7 +10,7 @@ import platform
 import socket
 import os
 
-def report_genarate(selected,threshold):
+def report_genarate(selected,threshold,my_keyword):
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
     current_date = now.date()
@@ -18,8 +18,12 @@ def report_genarate(selected,threshold):
     platform_name=platform.node()
     os_version=os.environ['COMPUTERNAME']
     f = open("SelectedCV.txt", "w")
-    f.write("Skill Extractor 2.0.2\n")
+    f.write("Skill Extractor 2.0.3\n")
     f.write("Generated on: {}\n".format(os_version))
+    f.write("Skills to be considered: ")
+    for skills in my_keyword:
+        f.write(skills+", ")
+    f.write("\n")
     f.write("Threshold for selection: {} %\n".format(threshold))
     f.write("\n############Selected CV#############\n")
     for selection in selected:
