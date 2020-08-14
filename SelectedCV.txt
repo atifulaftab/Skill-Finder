@@ -1,0 +1,11 @@
+Skill Extractor 2.0.3
+Generated on: DESKTOP-NARM281
+Skills to be considered: Python, C++, C, .Net, Git, Bachelor, 
+Threshold for selection: 60 %
+
+############Selected CV#############
+Atif Ul Aftab_2048692308_CV.pdf
+Atif Ul Aftab_Job_CV.pdf
+progit.pdf
+
+Generated at:2020-08-14  00:21:41

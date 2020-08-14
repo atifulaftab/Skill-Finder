@@ -17,8 +17,9 @@ def report_genarate(selected,threshold,my_keyword):
     host_name=socket.gethostname()
     platform_name=platform.node()
     os_version=os.environ['COMPUTERNAME']
-    f = open("SelectedCV.txt", "w")
-    f.write("Skill Extractor 2.0.3\n")
+    file_name=str(current_date)+" and "+(now.strftime("%H %M %S"))
+    f = open(file_name+".txt", "w")
+    f.write("Skill Extractor 2.0.4\n")
     f.write("Generated on: {}\n".format(os_version))
     f.write("Skills to be considered: ")
     for skills in my_keyword:
