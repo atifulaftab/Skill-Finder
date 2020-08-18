@@ -15,7 +15,9 @@ def extractSkill(keywords,filename,my_keyword):
     flag=0
     print("###################{}#################".format(filename))
     for check_requirement in my_keyword:
+        check_requirement=check_requirement.lower()
         for pdf_words in keywords:
+            pdf_words=pdf_words.lower()
             if check_requirement == pdf_words:
                 if len(copy)==0:
                     copy.append(pdf_words)    
